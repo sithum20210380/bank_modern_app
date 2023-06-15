@@ -18,6 +18,13 @@
   scroll-behavior: smooth;
 }
 
+.bg-image {
+  background-image: url('src/assets/landing_pic.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
 .text-gradient {
   background: radial-gradient(
     64.18% 64.18% at 71.16% 35.69%,
@@ -34,6 +41,50 @@
   text-fill-color: transparent;
 }
 
+.text-gradient-purple {
+  background: radial-gradient(
+    64.18% 64.18% at 71.16% 35.69%,
+    #9e95e8 0.89%,
+    #9174d9 17.23%,
+    #854bc4 42.04%,
+    #7d24af 55.12%,
+    #7d24af 71.54%,
+    #7d24af 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.text-gradient-blue-purple {
+  background: radial-gradient(
+    64.18% 64.18% at 71.16% 35.69%,
+    #00a6ff 0.89%,
+    #9e95e8 17.23%,
+    #006eff 34.57%,
+    #003dff 42.04%,
+    #ff00ff 55.12%,
+    #ff00ff 71.54%,
+    #ff00ff 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+@keyframes gradientAnimation {
+  0% { opacity: 0; }
+  50% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+.animate-gradient {
+  animation: gradientAnimation 3s ease-in-out infinite;
+}
+
+
 .bg-blue-gradient {
   background: linear-gradient(
     157.81deg,
@@ -45,6 +96,19 @@
     #33bbcf 90.29%
   );
 }
+
+.bg-purple-gradient {
+  background: linear-gradient(
+    157.81deg,
+    #9e95e8 -43.27%,
+    #9174d9 -21.24%,
+    #854bc4 12.19%,
+    #7d24af 29.82%,
+    #7d24af 51.94%,
+    #7d24af 90.29%
+  );
+}
+
 
 .bg-black-gradient {
   background: linear-gradient(
