@@ -90,15 +90,7 @@
 }
 
 .bg-purple-gradient {
-  background: linear-gradient(
-    157.81deg,
-    #9e95e8 -43.27%,
-    #9174d9 -21.24%,
-    #854bc4 12.19%,
-    #7d24af 29.82%,
-    #7d24af 51.94%,
-    #7d24af 90.29%
-  );
+  background: linear-gradient(to right top, #cc51d6, #b558dd, #9b5ee3, #7e64e7, #5a68e8);
 }
 
 
@@ -193,4 +185,48 @@
 .white__gradient {
   background: rgba(255, 255, 255, 0.6);
   filter: blur(750px);
+}
+
+.video-background-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Adjust the height as needed */
+  overflow: hidden;
+}
+
+.video-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background-color: rgba(0, 0, 0, 0.5); /* Adjust the background color and opacity as desired */
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.733); /* Adjust the opacity (last value) as needed */
+}
+
+.navbar-wrapper {
+  position: relative;
+  z-index: 1;
+}
+
+
+@keyframes moveAnimation {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(10px);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
