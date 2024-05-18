@@ -170,7 +170,7 @@ export const socialMedia = [
         link: "https://www.linkedin.com/",
     },
 ];
-
+//client data
 export const clients = [
     {
         id: "client-1",
