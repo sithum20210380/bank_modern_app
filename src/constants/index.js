@@ -147,7 +147,7 @@ export const  footerLinks = [
         ],
     },
 ];
-
+// social media data
 export const socialMedia = [
     {
         id: "social-media-1",
